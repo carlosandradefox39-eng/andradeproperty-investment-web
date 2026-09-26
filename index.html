@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AndradeProperty | Inversión</title>
+    <title>AndradeProperty | Inversión y Asesoría</title>
     <meta
       name="description"
-      content="Asesoría profesional para inversores. Oportunidades de inversión, rentabilidad y atención personalizada."
+      content="AndradeProperty ofrece asesoría profesional para inversores, estrategias de inversión y oportunidades de alto valor."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container nav">
-        <div class="logo-wrap">
-          <div class="logo-mark">A</div>
-          <div class="logo-text">AndradeProperty</div>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <div class="brand">
+          <div class="brand-mark">A</div>
+          <div class="brand-text">AndradeProperty</div>
         </div>
 
-        <nav class="nav-menu">
+        <nav class="main-nav">
           <a href="#inicio" data-i18n="nav.home">Inicio</a>
           <a href="#servicios" data-i18n="nav.services">Servicios</a>
           <a href="#inversion" data-i18n="nav.investment">Inversión</a>
@@ -33,121 +33,131 @@
         </nav>
 
         <div class="nav-actions">
-          <div class="language-switcher" aria-label="Selector de idioma">
+          <div class="lang-switch" aria-label="Language switcher">
             <button class="lang-btn active" data-lang="es">ES</button>
             <button class="lang-btn" data-lang="en">EN</button>
             <button class="lang-btn" data-lang="zh">中文</button>
             <button class="lang-btn" data-lang="ru">RU</button>
           </div>
 
-          <a href="#contacto" class="btn btn-primary" data-i18n="cta.consultation"
-            >Solicitar asesoría</a
-          >
+          <a href="#contacto" class="btn btn-primary" data-i18n="cta.consultation">Solicitar asesoría</a>
         </div>
       </div>
     </header>
 
     <main>
       <section class="hero" id="inicio">
-        <div class="container hero-grid">
+        <div class="container hero-layout">
           <div class="hero-copy">
-            <span class="eyebrow" data-i18n="hero.eyebrow">Soluciones de inversión</span>
-            <h1 data-i18n="hero.title">Impulsa tu patrimonio con oportunidades reales</h1>
+            <span class="eyebrow" data-i18n="hero.eyebrow">Estrategias de inversión</span>
+            <h1 data-i18n="hero.title">Estrategias de inversión para crecer tu patrimonio</h1>
             <p data-i18n="hero.subtitle">
-              Asesoría profesional para inversores que buscan estrategias inteligentes,
-              rentabilidad y acompañamiento cercano.
+              Acompañamiento profesional para inversores que buscan rentabilidad, seguridad y decisiones inteligentes.
             </p>
 
             <div class="hero-buttons">
-              <a href="#contacto" class="btn btn-primary" data-i18n="cta.consultation"
-                >Solicitar asesoría</a
-              >
-              <a href="#servicios" class="btn btn-secondary" data-i18n="cta.services"
-                >Ver servicios</a
-              >
+              <a href="#contacto" class="btn btn-primary" data-i18n="cta.consultation">Solicitar consulta</a>
+              <a href="#servicios" class="btn btn-secondary" data-i18n="cta.services">Conocer servicios</a>
             </div>
 
-            <ul class="hero-points">
-              <li data-i18n="hero.point1">Asesoría personalizada</li>
-              <li data-i18n="hero.point2">Oportunidades de inversión</li>
-              <li data-i18n="hero.point3">Atención profesional</li>
+            <ul class="hero-list">
+              <li data-i18n="hero.point1">Asesoría privada</li>
+              <li data-i18n="hero.point2">Oportunidades seleccionadas</li>
+              <li data-i18n="hero.point3">Decisiones con criterio</li>
             </ul>
           </div>
 
           <div class="hero-visual">
-            <div class="glass-card stats-card">
-              <div class="mini-label" data-i18n="card.market">Mercado</div>
-              <div class="big-number">+18.4%</div>
-              <div class="mini-text" data-i18n="card.performance">rendimiento anual</div>
+            <div class="glass-card card-top">
+              <span class="mini-label" data-i18n="metric.market">Mercado</span>
+              <div class="metric-number">+18.4%</div>
+              <div class="metric-copy" data-i18n="metric.return">rendimiento anual</div>
             </div>
 
-            <div class="chart-card">
-              <div class="chart-bars">
-                <span style="height: 22%"></span>
-                <span style="height: 38%"></span>
-                <span style="height: 57%"></span>
-                <span style="height: 70%"></span>
-                <span style="height: 86%"></span>
+            <div class="analytics-card">
+              <div class="chart-header">
+                <span data-i18n="chart.title">Crecimiento</span>
+                <span class="trend">▲ 18.4%</span>
+              </div>
+              <div class="bars">
+                <span style="height: 30%"></span>
+                <span style="height: 42%"></span>
+                <span style="height: 56%"></span>
+                <span style="height: 74%"></span>
+                <span style="height: 87%"></span>
                 <span style="height: 100%"></span>
               </div>
             </div>
 
-            <div class="floating-card">
-              <div class="floating-top">
+            <div class="glass-card floating-panel">
+              <div class="panel-row top-row">
                 <span class="dot"></span>
-                <span data-i18n="card.dashboard">Panel de inversión</span>
+                <span data-i18n="panel.dashboard">Panel de inversión</span>
               </div>
-              <div class="floating-row">
-                <span data-i18n="card.risk">Perfil</span>
-                <strong>Alta</strong>
+              <div class="panel-row">
+                <span data-i18n="panel.profile">Perfil</span>
+                <strong data-i18n="panel.profileValue">Moderado</strong>
               </div>
-              <div class="floating-row">
-                <span data-i18n="card.strategy">Estrategia</span>
-                <strong>Activa</strong>
+              <div class="panel-row">
+                <span data-i18n="panel.strategy">Estrategia</span>
+                <strong data-i18n="panel.strategyValue">Activa</strong>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <section class="metrics-strip">
+        <div class="container metrics-grid">
+          <div class="metric-box">
+            <strong>+18.4%</strong>
+            <span data-i18n="metric1.label">Rendimiento anual</span>
+          </div>
+          <div class="metric-box">
+            <strong>4</strong>
+            <span data-i18n="metric2.label">Idiomas</span>
+          </div>
+          <div class="metric-box">
+            <strong>1:1</strong>
+            <span data-i18n="metric3.label">Atención personalizada</span>
+          </div>
+          <div class="metric-box">
+            <strong>24/7</strong>
+            <span data-i18n="metric4.label">Disponibilidad</span>
+          </div>
+        </div>
+      </section>
+
       <section class="benefits">
         <div class="container">
-          <div class="section-header">
+          <div class="section-heading">
             <span class="eyebrow eyebrow-dark" data-i18n="section.why">¿Por qué elegirnos?</span>
-            <h2 data-i18n="benefits.title">Soluciones pensadas para inversores exigentes</h2>
+            <h2 data-i18n="benefits.title">Soluciones creadas para inversores exigentes</h2>
           </div>
 
-          <div class="benefits-grid">
-            <article class="feature-card">
-              <div class="icon">01</div>
+          <div class="cards-grid">
+            <article class="info-card">
+              <div class="card-number">01</div>
               <h3 data-i18n="benefits.card1.title">Experiencia</h3>
-              <p data-i18n="benefits.card1.text">
-                Acompañamiento profesional con enfoque en oportunidades rentables y sostenibles.
-              </p>
+              <p data-i18n="benefits.card1.text">Acompañamiento profesional con enfoque en oportunidades rentables y sostenibles.</p>
             </article>
 
-            <article class="feature-card">
-              <div class="icon">02</div>
+            <article class="info-card">
+              <div class="card-number">02</div>
               <h3 data-i18n="benefits.card2.title">Confianza</h3>
-              <p data-i18n="benefits.card2.text">
-                Enfoque serio, transparente y orientado a proteger el capital del inversor.
-              </p>
+              <p data-i18n="benefits.card2.text">Enfoque serio, transparente y orientado a proteger el capital del inversor.</p>
             </article>
 
-            <article class="feature-card">
-              <div class="icon">03</div>
+            <article class="info-card">
+              <div class="card-number">03</div>
               <h3 data-i18n="benefits.card3.title">Atención personalizada</h3>
-              <p data-i18n="benefits.card3.text">
-                Cada estrategia se adapta a tu perfil, objetivos y nivel de riesgo.
-              </p>
+              <p data-i18n="benefits.card3.text">Cada estrategia se adapta a tu perfil, objetivos y nivel de riesgo.</p>
             </article>
 
-            <article class="feature-card">
-              <div class="icon">04</div>
+            <article class="info-card">
+              <div class="card-number">04</div>
               <h3 data-i18n="benefits.card4.title">Oportunidades</h3>
-              <p data-i18n="benefits.card4.text">
-                Acceso a propuestas relevantes para generar valor en el largo plazo.
-              </p>
+              <p data-i18n="benefits.card4.text">Acceso a propuestas relevantes para generar valor en el largo plazo.</p>
             </article>
           </div>
         </div>
@@ -155,48 +165,39 @@
 
       <section class="services" id="servicios">
         <div class="container">
-          <div class="section-header">
+          <div class="section-heading center">
             <span class="eyebrow eyebrow-dark" data-i18n="section.services">Servicios</span>
             <h2 data-i18n="services.title">Asesoría adaptada a tus objetivos</h2>
           </div>
 
           <div class="services-grid">
             <article class="service-card">
-              <div class="service-badge">A</div>
+              <div class="service-icon">A</div>
               <h3 data-i18n="services.card1.title">Asesoría inmobiliaria</h3>
-              <p data-i18n="services.card1.text">
-                Identificamos oportunidades atractivas según tu perfil y tus objetivos financieros.
-              </p>
+              <p data-i18n="services.card1.text">Identificamos oportunidades atractivas según tu perfil y tus objetivos financieros.</p>
             </article>
 
             <article class="service-card">
-              <div class="service-badge">B</div>
+              <div class="service-icon">B</div>
               <h3 data-i18n="services.card2.title">Inversión estratégica</h3>
-              <p data-i18n="services.card2.text">
-                Analizamos posibles rutas de inversión para lograr rentabilidad con criterio.
-              </p>
+              <p data-i18n="services.card2.text">Analizamos posibles rutas de inversión para lograr rentabilidad con criterio.</p>
             </article>
 
             <article class="service-card">
-              <div class="service-badge">C</div>
+              <div class="service-icon">C</div>
               <h3 data-i18n="services.card3.title">Captación de inversores</h3>
-              <p data-i18n="services.card3.text">
-                Conectamos perfiles con oportunidades que encajen con su capacidad de inversión.
-              </p>
+              <p data-i18n="services.card3.text">Conectamos perfiles con oportunidades que encajen con su capacidad de inversión.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="investment" id="inversion">
-        <div class="container investment-grid">
-          <div class="investment-copy">
+      <section class="process" id="inversion">
+        <div class="container process-layout">
+          <div class="process-copy">
             <span class="eyebrow eyebrow-dark" data-i18n="section.investment">Inversión</span>
             <h2 data-i18n="investment.title">Un enfoque claro para maximizar oportunidades</h2>
-            <p data-i18n="investment.text">
-              La inversión exige criterio, análisis y visión de largo plazo. En AndradeProperty
-              te ayudamos a visualizar alternativas con sentido estratégico.
-            </p>
+            <p data-i18n="investment.text">La inversión exige criterio, análisis y visión de largo plazo. En AndradeProperty te ayudamos a visualizar alternativas con sentido estratégico.</p>
 
             <ul class="check-list">
               <li data-i18n="investment.item1">Diagnóstico inicial personalizado</li>
@@ -206,25 +207,41 @@
             </ul>
           </div>
 
-          <div class="investment-panel">
-            <div class="status-box">
-              <span class="label" data-i18n="panel.risk">Perfil de riesgo</span>
-              <strong data-i18n="panel.level">Moderado / Alto</strong>
+          <div class="timeline">
+            <div class="step">
+              <span>01</span>
+              <div>
+                <h4 data-i18n="step1.title">Diagnóstico</h4>
+                <p data-i18n="step1.text">Conocemos tus metas, perfil y expectativas.</p>
+              </div>
             </div>
-            <div class="status-box">
-              <span class="label" data-i18n="panel.plan">Plan</span>
-              <strong data-i18n="panel.planText">Estrategia personalizada</strong>
+            <div class="step">
+              <span>02</span>
+              <div>
+                <h4 data-i18n="step2.title">Perfil</h4>
+                <p data-i18n="step2.text">Definimos riesgos, horizonte y capacidad de inversión.</p>
+              </div>
             </div>
-            <div class="status-box">
-              <span class="label" data-i18n="panel.focus">Foco</span>
-              <strong data-i18n="panel.focusText">Rentabilidad y estabilidad</strong>
+            <div class="step">
+              <span>03</span>
+              <div>
+                <h4 data-i18n="step3.title">Recomendación</h4>
+                <p data-i18n="step3.text">Te proponemos opciones estratégicas y bien orientadas.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span>04</span>
+              <div>
+                <h4 data-i18n="step4.title">Seguimiento</h4>
+                <p data-i18n="step4.text">Te acompañamos durante el proceso con criterio continuo.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="about" id="nosotros">
-        <div class="container about-grid">
+        <div class="container about-layout">
           <div class="about-photo">
             <div class="photo-frame">
               <div class="photo-shape"></div>
@@ -234,14 +251,34 @@
           <div class="about-copy">
             <span class="eyebrow eyebrow-dark" data-i18n="section.about">Nosotros</span>
             <h2 data-i18n="about.title">Especialistas en conectar inversión y oportunidad</h2>
-            <p data-i18n="about.text1">
-              Somos un equipo orientado a la relación profesional con inversores, ofreciendo
-              análisis, acompañamiento y acceso a oportunidades del mercado.
-            </p>
-            <p data-i18n="about.text2">
-              Nuestra misión es generar confianza, claridad y decisión financiera con una
-              visión moderna y estratégica.
-            </p>
+            <p data-i18n="about.text1">Somos un equipo orientado a la relación profesional con inversores, ofreciendo análisis, acompañamiento y acceso a oportunidades del mercado.</p>
+            <p data-i18n="about.text2">Nuestra misión es generar confianza, claridad y decisión financiera con una visión moderna y estratégica.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow eyebrow-dark" data-i18n="section.testimonials">Testimonios</span>
+            <h2 data-i18n="testimonials.title">Opiniones de clientes y socios</h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <article class="quote-card">
+              <p data-i18n="quote1">“Muy profesional, claro y serio. Me ayudó a entender mejor dónde tomar decisiones con criterio.”</p>
+              <strong>— Cliente</strong>
+            </article>
+
+            <article class="quote-card">
+              <p data-i18n="quote2">“Atención muy personalizada. La estrategia quedó mucho más clara y orientada a mis objetivos.”</p>
+              <strong>— Inversor</strong>
+            </article>
+
+            <article class="quote-card">
+              <p data-i18n="quote3">“La visión fue muy útil para tomar decisiones con mayor confianza y mejor criterio.”</p>
+              <strong>— Socio</strong>
+            </article>
           </div>
         </div>
       </section>
@@ -251,9 +288,7 @@
           <div class="contact-copy">
             <span class="eyebrow eyebrow-dark" data-i18n="section.contact">Contacto</span>
             <h2 data-i18n="contact.title">Agenda una consulta privada</h2>
-            <p data-i18n="contact.subtitle">
-              Cuéntanos tus objetivos y te ayudaremos a evaluar oportunidades relevantes.
-            </p>
+            <p data-i18n="contact.subtitle">Cuéntanos tus objetivos y te ayudaremos a evaluar oportunidades relevantes.</p>
           </div>
 
           <form class="contact-form">
@@ -289,24 +324,20 @@
               <textarea rows="5" placeholder="Cuéntanos tu objetivo de inversión..."></textarea>
             </label>
 
-            <button type="submit" class="btn btn-primary wide-btn" data-i18n="form.submit">
-              Enviar consulta
-            </button>
+            <button type="submit" class="btn btn-primary wide-btn" data-i18n="form.submit">Enviar consulta</button>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="site-footer">
       <div class="container footer-grid">
-        <div>
-          <div class="logo-wrap footer-logo">
-            <div class="logo-mark">A</div>
-            <div class="logo-text">AndradeProperty</div>
+        <div class="footer-brand-block">
+          <div class="brand footer-brand">
+            <div class="brand-mark">A</div>
+            <div class="brand-text">AndradeProperty</div>
           </div>
-          <p data-i18n="footer.text">
-            Asesoría para inversores que buscan oportunidades reales, rentables y bien orientadas.
-          </p>
+          <p data-i18n="footer.text">Asesoría para inversores que buscan oportunidades reales, rentables y bien orientadas.</p>
         </div>
 
         <div>
@@ -328,10 +359,9 @@
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <div class="container">
-          © 2026 AndradeProperty
-        </div>
+        <div class="container">© 2026 AndradeProperty</div>
       </div>
     </footer>
 
